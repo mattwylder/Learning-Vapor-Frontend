@@ -8,17 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		E286818627B3B3EF0086DAAE /* Learning_Vapor_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286818527B3B3EF0086DAAE /* Learning_Vapor_iOSApp.swift */; };
-		E286818827B3B3EF0086DAAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286818727B3B3EF0086DAAE /* ContentView.swift */; };
+		E286818827B3B3EF0086DAAE /* SongListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286818727B3B3EF0086DAAE /* SongListView.swift */; };
 		E286818A27B3B3F10086DAAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E286818927B3B3F10086DAAE /* Assets.xcassets */; };
 		E286818D27B3B3F10086DAAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E286818C27B3B3F10086DAAE /* Preview Assets.xcassets */; };
+		E286819827B3B4520086DAAE /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286819727B3B4520086DAAE /* HTTPClient.swift */; };
+		E286819A27B3B5EC0086DAAE /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286819927B3B5EC0086DAAE /* Song.swift */; };
+		E286819C27B3B6320086DAAE /* SongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286819B27B3B6320086DAAE /* SongViewModel.swift */; };
+		E286819E27B453480086DAAE /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286819D27B453480086DAAE /* ModalType.swift */; };
+		E28681A027B454040086DAAE /* AddUpdateSongView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E286819F27B454040086DAAE /* AddUpdateSongView.swift */; };
+		E28681A227B454B70086DAAE /* AddUpdateSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28681A127B454B70086DAAE /* AddUpdateSongViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E286818227B3B3EF0086DAAE /* Learning-Vapor-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Learning-Vapor-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E286818527B3B3EF0086DAAE /* Learning_Vapor_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Learning_Vapor_iOSApp.swift; sourceTree = "<group>"; };
-		E286818727B3B3EF0086DAAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E286818727B3B3EF0086DAAE /* SongListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListView.swift; sourceTree = "<group>"; };
 		E286818927B3B3F10086DAAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E286818C27B3B3F10086DAAE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E286819727B3B4520086DAAE /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		E286819927B3B5EC0086DAAE /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		E286819B27B3B6320086DAAE /* SongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongViewModel.swift; sourceTree = "<group>"; };
+		E286819D27B453480086DAAE /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		E286819F27B454040086DAAE /* AddUpdateSongView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSongView.swift; sourceTree = "<group>"; };
+		E28681A127B454B70086DAAE /* AddUpdateSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSongViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +63,11 @@
 		E286818427B3B3EF0086DAAE /* Learning-Vapor-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				E286819527B3B4290086DAAE /* ViewModels */,
+				E286819427B3B41C0086DAAE /* Views */,
+				E286819327B3B4030086DAAE /* Models */,
+				E286819627B3B4320086DAAE /* Utilities */,
 				E286818527B3B3EF0086DAAE /* Learning_Vapor_iOSApp.swift */,
-				E286818727B3B3EF0086DAAE /* ContentView.swift */,
 				E286818927B3B3F10086DAAE /* Assets.xcassets */,
 				E286818B27B3B3F10086DAAE /* Preview Content */,
 			);
@@ -65,6 +80,41 @@
 				E286818C27B3B3F10086DAAE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E286819327B3B4030086DAAE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E286819927B3B5EC0086DAAE /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E286819427B3B41C0086DAAE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E286818727B3B3EF0086DAAE /* SongListView.swift */,
+				E286819F27B454040086DAAE /* AddUpdateSongView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E286819527B3B4290086DAAE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E286819B27B3B6320086DAAE /* SongViewModel.swift */,
+				E28681A127B454B70086DAAE /* AddUpdateSongViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E286819627B3B4320086DAAE /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E286819727B3B4520086DAAE /* HTTPClient.swift */,
+				E286819D27B453480086DAAE /* ModalType.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E286818827B3B3EF0086DAAE /* ContentView.swift in Sources */,
+				E286819A27B3B5EC0086DAAE /* Song.swift in Sources */,
+				E286818827B3B3EF0086DAAE /* SongListView.swift in Sources */,
 				E286818627B3B3EF0086DAAE /* Learning_Vapor_iOSApp.swift in Sources */,
+				E286819E27B453480086DAAE /* ModalType.swift in Sources */,
+				E286819827B3B4520086DAAE /* HTTPClient.swift in Sources */,
+				E28681A227B454B70086DAAE /* AddUpdateSongViewModel.swift in Sources */,
+				E286819C27B3B6320086DAAE /* SongViewModel.swift in Sources */,
+				E28681A027B454040086DAAE /* AddUpdateSongView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
